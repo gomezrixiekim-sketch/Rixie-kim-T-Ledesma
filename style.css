@@ -1478,7 +1478,7 @@ LOW */
 }
 
 .contact-item:hover .contact-icon {
-    background: #090a0a;
+    background: #0e0f0f;
     color: #ffffff;
     box-shadow: 0 0 20px rgba(8, 127, 255, 0.3);
 }
