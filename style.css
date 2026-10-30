@@ -1715,117 +1715,26 @@ LOW */
     }
 
 }
-/* ===== RK CIRCLE LOGO ===== */
-
+/* RK IMAGE LOGO */
 .rk-logo {
-    position: relative;
-    width: 75px;
-    height: 75px;
-
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-
-    border: 3px solid #398bff;
-    border-radius: 50%;
-
-    background: #05070d;
-    text-decoration: none;
-
-    box-shadow:
-        0 0 12px rgba(57, 139, 255, 0.25),
-        inset 0 0 12px rgba(57, 139, 255, 0.08);
-
-    overflow: hidden;
-    flex-shrink: 0;
-
-    transition: 0.35s ease;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 1000;
 }
 
-/* R LETTER */
-
-.rk-letter-r {
-    position: absolute;
-    top: 7px;
-    left: 12px;
-
-    color: #ffffff;
-    font-family: Georgia, serif;
-    font-size: 42px;
-    font-weight: bold;
-
-    z-index: 2;
+.rk-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.3s ease;
 }
 
-/* K LETTER */
-
-.rk-letter-k {
-    position: absolute;
-    right: 9px;
-    bottom: 3px;
-
-    color: #398bff;
-    font-family: Georgia, serif;
-    font-size: 44px;
-    font-weight: bold;
-
-    z-index: 1;
+.rk-logo img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px #008cff);
 }
 
-
-/* SMALL SPARKLE */
-
-.rk-sparkle {
-    position: absolute;
-    top: 10px;
-    right: 12px;
-
-    color: #59a8ff;
-    font-size: 12px;
-
-    z-index: 4;
-}
-
-/* HOVER EFFECT */
-
-.rk-logo:hover {
-    transform: scale(1.08) rotate(-3deg);
-
-    border-color: #80b8ff;
-
-    box-shadow:
-        0 0 22px rgba(57, 139, 255, 0.55),
-        inset 0 0 15px rgba(57, 139, 255, 0.12);
-}
-
-/* SMALL SCREEN */
-
-@media (max-width: 600px) {
-    .rk-logo {
-        width: 62px;
-        height: 62px;
-    }
-
-    .rk-letter-r {
-        font-size: 35px;
-        left: 10px;
-        top: 6px;
-    }
-
-    .rk-letter-k {
-        font-size: 37px;
-        right: 7px;
-        bottom: 3px;
-    }
-
-    .rk-orbit {
-        width: 73px;
-        height: 21px;
-    }
-
-    .rk-sparkle {
-        top: 8px;
-        right: 9px;
-        font-size: 10px;
-    }
-}
